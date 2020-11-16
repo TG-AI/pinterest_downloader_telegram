@@ -54,7 +54,7 @@ async def start(event):
         )
     )
     mesaj = f"Gönderen [{j.user.first_name}](tg://user?id={event.chat_id})\nMesaj: {event.message.message}"
-    await bot.send_message(
+    await event.respond(
         "By_Azade",
         mesaj
     )
